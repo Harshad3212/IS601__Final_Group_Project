@@ -1,0 +1,6 @@
+Flask
+flask-mysql
+simplejson
+mysql.connector
+Flask-WTF
+passlib

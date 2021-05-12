@@ -17,3 +17,12 @@ We built an app using Docker, Python and My SQL database. Our App has a registra
 + Complete registration and Login with registered Username and Password.
 + You will be able to see the charts with covid stats, you can logout when you are done.
 
+### Step by Step Walkthrough:
+1. Run "docker-compose up" command
+![ss1](screenshots/ss1.png)
+2. After running, go to browser and type the url "localhost:5000/register"
+![ss3](screenshots/ss3.png)
+3. After registration, you can login with the registered details.
+![ss4](screenshots/ss4.png)
+4. After logging in you can view the charts that were plotted from our database. You can logout once you are done.
+![ss5](screenshots/ss5.png) 

@@ -69,8 +69,16 @@
 					data: {{ values | safe }},
 				}]
 			};
+			var pieData = {
+				labels: {{ labels | safe }},
+				datasets: [{
+					label: "Covid Cases",
+					fill: false,
+					backgroundColor: ['#ff0000', '#ff4000', '#ff8000', '#ffbf00', '#ffbf00', '#ffff00', '#bfff00', '#80ff00', '#40ff00', '#00ff00'],
+					data: {{ values | safe }},
+				}]
+			};
 
-			// Options to display value on top of bars
 			var myoption = {
 				tooltips: {
 					enabled: true
@@ -123,11 +131,12 @@
 				options: myoption
 			});
 
-
-
-
-
-
+			var ptx = document.getElementById('pie_Chart').getContext('2d');
+			var pieChart = new Chart(ptx, {
+				type: 'pie',    	// Define chart type
+				data: pieData,    	// Chart data
+				options: myoption1 	// Chart Options [This is optional paramenter use to add some extra things in the chart].
+			});
 
 		</script>
 	</body>

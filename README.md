@@ -12,8 +12,8 @@ We built an app using Docker, Python and My SQL database. Our App has a registra
 
 ### Installation:
 + The app can be cloned from Git repository
-+ To run the project, type docker-compose up command in Pycharm termial.
-+ Now, open browser and type the URL
++ To run the project, type docker-compose up command in Pycharm terminal.
++ Wait, for a minute till it runs, then open browser and type "localhost:5000/register"
 + Complete registration and Login with registered Username and Password.
-+ Then you will be able see the Charts.
++ You will be able to see the charts with covid stats, you can logout when you are done.
 
